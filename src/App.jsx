@@ -1,5 +1,5 @@
 import React from 'react'
-import SecurityScanner from './components/SecurityScanner'
+import SecurityScanner from './components/SecurityScanner.jsx'
 
 function App() {
   return (
