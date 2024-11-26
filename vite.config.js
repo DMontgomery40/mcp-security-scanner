@@ -4,10 +4,10 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/mcp-security-scanner/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: '/mcp-security-scanner/',
 })
