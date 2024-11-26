@@ -1,8 +1,8 @@
 {
   "name": "mcp-security-scanner",
-  "version": "1.0.0",
-  "description": "A security vulnerability scanner built with MCP plugins",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
