@@ -1,40 +1,18 @@
 {
   "name": "mcp-security-scanner",
   "version": "1.0.0",
-  "description": "A comprehensive security vulnerability scanner for MCP (Model Context Protocol) servers and plugins",
+  "description": "A comprehensive security vulnerability scanner for MCP",
   "type": "module",
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "scan": "node cli.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
-  "bin": {
-    "mcp-scan": "./cli.js"
-  },
-  "keywords": [
-    "mcp",
-    "security",
-    "scanner",
-    "vulnerability",
-    "plugins",
-    "websocket"
-  ],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "ws": "^8.14.2"
   },
   "devDependencies": {
     "jest": "^29.7.0",
     "@jest/globals": "^29.7.0"
-  },
-  "jest": {
-    "transform": {},
-    "testEnvironment": "node",
-    "extensionsToTreatAsEsm": [".js"],
-    "moduleNameMapper": {
-      "^(\.{1,2}/.*)\.js$": "$1"
-    }
   }
 }
