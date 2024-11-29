@@ -1,0 +1,4 @@
+title: MCP Security Scanner
+baseurl: "/mcp-security-scanner"
+url: "https://dmontgomery40.github.io"
+exclude: [node_modules, src, public]

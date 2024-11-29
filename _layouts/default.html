@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: "MCP Security Scanner" }}</title>
+    <script type="module" crossorigin src="{{ site.baseurl }}/assets/index.js"></script>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/index.css">
+  </head>
+  <body>
+    {{ content }}
+    <div id="root"></div>
+  </body>
+</html>
