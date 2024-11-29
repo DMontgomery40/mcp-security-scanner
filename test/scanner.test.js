@@ -1,3 +1,4 @@
+import { describe, expect, test, beforeEach } from '@jest/globals';
 import { SecurityScanner } from '../main.js';
 
 describe('SecurityScanner', () => {
