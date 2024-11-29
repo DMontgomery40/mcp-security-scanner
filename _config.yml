@@ -1,0 +1,6 @@
+theme: jekyll-theme-cayman
+title: MCP Security Scanner
+description: A security vulnerability scanner for plugin architectures
+show_downloads: true
+github:
+  repository_url: https://github.com/DMontgomery40/mcp-security-scanner
