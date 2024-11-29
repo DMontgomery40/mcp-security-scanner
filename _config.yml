@@ -1,4 +1,9 @@
 title: MCP Security Scanner
+description: A comprehensive security vulnerability scanner for MCP servers and plugins
+theme: jekyll-theme-cayman
+
 baseurl: "/mcp-security-scanner"
 url: "https://dmontgomery40.github.io"
-exclude: [node_modules, src, public]
+
+plugins:
+  - jekyll-seo-tag

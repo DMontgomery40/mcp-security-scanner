@@ -1,0 +1,31 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Custom styles
+.main-content {
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  code {
+    background-color: #f8f9fa;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 85%;
+  }
+
+  pre {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 16px;
+    overflow: auto;
+  }
+}
+
+.project-tagline {
+  opacity: 0.8;
+}
