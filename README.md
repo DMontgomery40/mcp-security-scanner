@@ -2,6 +2,8 @@
 
 A security vulnerability scanner built with MCP plugins for analyzing JavaScript code.
 
+https://dmontgomery40.github.io/plugin-vulnerability-scanner/
+
 ## Features
 
 - Scans JavaScript files for common security vulnerabilities
