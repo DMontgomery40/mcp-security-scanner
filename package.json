@@ -1,18 +1,47 @@
 {
   "name": "mcp-security-scanner",
   "version": "1.0.0",
-  "description": "A comprehensive security vulnerability scanner for MCP",
   "type": "module",
-  "main": "main.js",
-  "scripts": {
-    "start": "node main.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-security-scanner": "./dist/index.js"
   },
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "chmod +x dist/index.js",
+    "start": "node dist/index.js",
+    "start:stdio": "MCP_TRANSPORT=stdio node dist/index.js",
+    "start:http": "MCP_TRANSPORT=http node dist/index.js",
+    "test": "npm run build && node test/mcp-behavior.test.mjs",
+    "prepare": "npm run build"
+  },
+  "description": "MCP server for scanning JavaScript/TypeScript projects for security vulnerabilities including memory issues, insecure file operations, unsafe plugin loading, command injection, and configuration weaknesses.",
+  "keywords": [
+    "mcp",
+    "security",
+    "scanner",
+    "vulnerability",
+    "model-context-protocol",
+    "stdio",
+    "streamable-http"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DMontgomery40/mcp-security-scanner"
+  },
+  "author": "David Montgomery",
+  "license": "MIT",
   "dependencies": {
-    "ws": "^8.14.2"
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "express": "^5.2.1",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "@jest/globals": "^29.7.0"
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
